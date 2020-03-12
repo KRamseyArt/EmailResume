@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+    <head>
+        <style type ="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap');
+            * {
+                margin: 0;
+                border: 0;
+                padding: 0;
+            }
+
+            body {
+                background: url("http://www.kalinramsey.com/wp-content/uploads/2019/03/Background.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                /* font-family: 'Play', sans-serif; */
+                font-size: 18px;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 2%;
+                color: #565859;
+            }
+
+            #wrapper {
+                margin: 0 auto;
+                background: #fff;
+            }
+
+            h2 {
+                font-family: 'Play', sans-serif;
+                letter-spacing: 1%;
+                padding-left: 2%;
+                font-weight: 700;
+            }
+
+            p {
+                font-family: 'Quicksand', sans-serif;
+                padding: 2%;
+                text-align: justify;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            .line {
+                clear: both;
+                margin:2% auto;
+                width: 90%;
+                height: 2px;
+                background-color: #e3e9e9;
+            }
+
+            header {
+                box-sizing: border-box;
+                width: 100%;
+                height: 100px;
+            }
+
+            #logo {
+                position: relative;
+                float: left;
+                margin: 2% 0 2% 2%;
+                max-width: 90px;
+            }
+
+            .info {
+                text-align: right;
+                margin: 2% 0 2% 0;
+            }
+            .info a {
+                text-decoration: none;
+            }
+            
+            .footer {
+                margin: 2% 0 5% 0;
+                padding: 2% auto;
+                align-content: center;
+                justify-items: center;
+            }
+            .btn {
+                border-radius: 50px;
+                color: white;
+                font-size: 17px;
+                font-weight: bold;
+                background: #2512D9;
+                padding: 8px;
+                text-decoration: none;
+                width: 200px;
+            }
+
+            .btn:hover {
+                background-image: linear-gradient(to top, #8744FF, #2512D9) ;
+                color: white;
+                text-decoration: none;
+            }
+
+            .button-holder {
+                margin: 3% auto;
+            }
+
+            .social li {
+                display: inline;
+                padding: 0 10px;
+            }
+            .social li img {
+                width: 50px;
+                border-radius: 50%;
+            }
+            .social li img:hover {
+                position: relative;
+                bottom: 5px;
+            }
+
+            .social {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .banner {
+                margin-bottom: 2%;
+            }
+
+            .content {
+                display: inline;
+            }
+            .write-up {
+                display: block;
+                align-content: center;
+                justify-content: center;
+                margin: 0;
+            }
+            .write-up .container{
+                margin: 0;
+                width: 450px;
+                max-width: 800px;
+                float: left;
+                text-align: center;
+            }
+            table {
+                /* border: 1px solid black; */
+            }
+            .projects tr td {
+                /* border: 1px solid black; */
+                /* padding-top: 2%; */
+                text-align: center;
+            }
+            .projects tr td p{
+                text-align: center;
+                font-weight: bold;
+            }
+            .title {
+                font-size: 16px;
+                font-weight: bold;
+                /* line-height: 2px; */
+                text-align: left;
+                background-image: linear-gradient(to right, black, #2512D9);
+                margin-left: -1%;
+                padding-left: 20px;
+                color: white;
+                text-shadow:
+                    1px 0px 5px  #2512D9,
+                    0px 1px 5px  #2512D9;
+            }
+            .date {
+                color:rgb(172, 172, 172);
+                text-align: right;
+                /* font-style: italic; */
+                font-size: 14px;
+                /* line-height: 5px; */
+            }
+            .description {
+                /* line-height: 2px; */
+                font-size: 16px;
+                font-style: italic;
+                margin-left: 2%;
+            }
+            .skillset {
+                display: inline;
+                min-height: 100%;
+                min-width: 150px;
+                max-width: 100%;
+                margin: 2% 0 0 0;
+                background-color: rgb(196, 175, 255);
+            }
+            .skillset h2{
+                text-align: center;
+            }
+            .skillset .container{
+                width: 100%;
+                margin: 0 0 2% 0;
+            }
+            .skill {
+                width: 50px;
+                display: inline;
+                position: relative;
+                text-align: center;
+                justify-content: center;
+            }
+            
+            @media screen and (max-width:641px) {
+                .write-up .container {
+                    max-width: 100%;
+                    width: 100%;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                #skill1 {
+                    display: inline;
+                }
+                #skill2 {
+                    display: inline;
+                }
+                #skill3{
+                    display: inline;
+                }
+                #skill4 {
+                    display: inline;
+                }
+                #skill5 {
+                    display: inline;
+                }
+                #skill6{
+                    display: inline;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Logo + Menu -->
+            <header>
+                <div id="logo">
+                    <a href="http://www.kalinramsey.com/" target="_blank">
+                        <!--"http://www.kalinramsey.com/wp-content/uploads/2019/04/KRlogo_NEW3c.gif"--> 
+                        <img src="http://www.kalinramsey.com/wp-content/uploads/2019/04/KRlogo_NEW3c.gif" alt="">
+                    </a>
+                    
+                </div>
+                <p class="info">
+                        <em>
+                                <strong>Kalin Ramsey</strong><br>
+                                Web Developer<br>
+                                480.258.2570<br>
+                                <a href="mailto:dev@kalinramsey.com?subject=I Read Your Resume&body=">dev@KalinRamsey.com</a>
+                        </em>
+                    </p>
+            </header>
+
+            <!-- Hero Banner -->
+            <div class="banner">
+                <img src="http://via.placeholder.com/1600x300/&text=banner" alt="">
+            </div>
+
+            <!-- Content-->
+            <div class="content">
+                <div class="write-up">
+                        <div class="container" align="center">
+                            <h2>Education</h2>
+                            <table class="timetable" width="100%">
+                                <tr>
+                                    <td>
+                                            <p class="title">Bachelor of Computer Sci.</p>
+                                    </td>
+                                    <td>
+                                            <p class="date"><strong>Collins College</strong> (2009-2014)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p class="description">Majored in Video Game Production, trained in a variety of multi-media technologies. Founding member of NeuType extracurricular club to educate peers and encourage good study habits, while coordinating collaborative efforts between members working on individual passion projects.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td>
+                                                <p class="title">OOP Java Certification</p>
+                                        </td>
+                                        <td>
+                                                <p class="date"><strong>University of Helsinki</strong> (2019)</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <p class="description">Completed their 12 week Java certification program in only 8 weeks, using critical thinking and intensive research to create several hundred programs to solve presented problems.</p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            
+
+
+
+                            <h2>Experience</h2>
+                            <table class="timetable" width="100%">
+                                <tr>
+                                    <td class="flag">
+                                            <p class="title">Brand Manager</p>
+                                    </td>
+                                    <td>
+                                            <p class="date"><strong>Brand Vending Products</strong> (2016-present)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p class="description">Developed  and maintained visual aesthetic for multiple brand names distributed across the country. Designed graphics and assets for numerous HTML email blasts, apps, and websites.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            <p class="title">Art Director</p>
+                                    </td>
+                                    <td>
+                                            <p class="date"><strong>SqwishLand</strong> (2014-present)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p class="description">Managed various art assets provided by independent contractors to create a consistent look and feel for the internationally best-selling vending machine toy brand. Created UI for their apps and websites, and all print and digital marketing materials.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            <p class="title">Graphic Designer</p>
+                                    </td>
+                                    <td>
+                                            <p class="date"><strong>PoparToys</strong> (2013-present)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p class="description">Designed the UX and GUI elements for their various apps that complement several educational wall charts and study mats that have since made their way to market and classrooms across the United States.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+                    
+                <div class="skillset">
+                        <h2>Skills</h2>
+                        <div class="container" align="center">
+                            <section class="skill">
+                                    <section id="skill1">
+                                            <svg height="120" width="120">
+                                                <circle cx="60" cy="60" r="40" stroke="#cfcfcf" stroke-width="8" fill="none" />
+                                                <circle 
+                                                        r="40" 
+                                                        cx="60" 
+                                                        cy="60" 
+                                                        stroke="#F6511D" 
+                                                        fill="transparent" 
+                                                        stroke-dasharray="220" 
+                                                        stroke-dashoffset="0" 
+                                                        stroke-width="7">
+                                                </circle>
+                                                <text x="45" y="65" fill="#565859">95%</text>
+                                                <text x="40" y="120" fill="#565859">HTML</text>
+                                            </svg>   
+                                        </section>
+                            </section>
+                            <section class="skill">
+                                    <section id="skill2">
+                                            <svg height="120" width="120">
+                                                <circle cx="60" cy="60" r="40" stroke="#cfcfcf" stroke-width="8" fill="none" />
+                                                <circle 
+                                                        r="40" 
+                                                        cx="60" 
+                                                        cy="60" 
+                                                        stroke="#00A6ED" 
+                                                        fill="transparent" 
+                                                        stroke-dasharray="200" 
+                                                        stroke-dashoffset="0" 
+                                                        stroke-width="7">
+                                                </circle>
+                                                <text x="45" y="65" fill="#565859">80%</text>
+                                                <text x="45" y="120" fill="#565859">CSS</text>
+                                            </svg>   
+                                        </section>
+                            </section>
+                            <section class="skill">
+                                    <section id="skill3">
+                                            <svg height="120" width="120">
+                                                <circle cx="60" cy="60" r="40" stroke="#cfcfcf" stroke-width="8" fill="none" />
+                                                <circle 
+                                                    r="40" 
+                                                    cx="60" 
+                                                    cy="60" 
+                                                    stroke="#FFB400" 
+                                                    fill="transparent" 
+                                                    stroke-dasharray="200" 
+                                                    stroke-dashoffset="0"  stroke-width="7">
+                                                </circle>
+                                                <text x="45" y="65" fill="#565859">80%</text>
+                                                <text x="10" y="120" fill="#565859">JAVASCRIPT</text>
+                                            </svg>   
+                                        </section>
+                            </section>
+                            <br>
+                            <section class="skill">
+                                <section id="skill4">
+                                    <svg height="120" width="120">
+                                        <circle cx="60" cy="60" r="40" stroke="#cfcfcf" stroke-width="8" fill="none" />
+                                        <circle 
+                                            r="40" 
+                                            cx="60" 
+                                            cy="60" 
+                                            stroke="#8f0000" 
+                                            fill="transparent" 
+                                            stroke-dasharray="240" 
+                                            stroke-dashoffset="60"  stroke-width="7">
+                                        </circle>
+                                        <text x="45" y="65" fill="#565859">75%</text>
+                                        <text x="37" y="120" fill="#565859">JAVA</text>
+                                    </svg>   
+                                </section>
+                            </section>
+                            <section class="skill">
+                                <section id="skill5">
+                                    <svg height="120" width="120">
+                                        <circle cx="60" cy="60" r="40" stroke="#cfcfcf" stroke-width="8" fill="none" />
+                                        <circle 
+                                            r="40" 
+                                            cx="60" 
+                                            cy="60" 
+                                            stroke="#338f33" 
+                                            fill="transparent" 
+                                            stroke-dasharray="200" 
+                                            stroke-dashoffset="60"  stroke-width="7">
+                                        </circle>
+                                        <text x="45" y="65" fill="#565859">60%</text>
+                                        <text x="42" y="120" fill="#565859">PHP</text>
+                                    </svg>   
+                                </section>
+                            </section>
+                            <section class="skill">
+                                <section id="skill6">
+                                    <svg height="120" width="120">
+                                        <circle cx="60" cy="60" r="40" stroke="#cfcfcf" stroke-width="8" fill="none" />
+                                        <circle 
+                                            r="40" 
+                                            cx="60" 
+                                            cy="60" 
+                                            stroke="#8f00f8" 
+                                            fill="transparent" 
+                                            stroke-dasharray="190" 
+                                            stroke-dashoffset="60"  stroke-width="7">
+                                        </circle>
+                                        <text x="45" y="65" fill="#565859">55%</text>
+                                        <text x="47" y="120" fill="#565859">C#</text>
+                                    </svg>   
+                                </section>
+                        </section>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="line"></div>
+
+
+            <h2 align="center">Personal Projects</h2>
+                            <table class="projects" width="100%" align="center">
+                                <tr>
+                                    <tr>
+                                    <td>
+                                            <p align="center">Websites</p>
+                                    </td>
+                                    <td>
+                                            <p align="center">HTML Email</p>
+                                    </td>
+                                    <td>
+                                            <p align="center">Web Apps</p>
+                                    </td>
+                                </tr>
+                                    <td>
+                                        <img src="http://via.placeholder.com/150" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="http://via.placeholder.com/150" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="http://via.placeholder.com/150" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+            <div class="footer" align="center">
+                <div class="button-holder">
+                    <a href="http://www.kalinramsey.com/" class="btn">Visit Portfolio Site</a>
+                </div>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/kalin.ramsey?ref=bookmarks" target="_blank"><img src="http://www.kalinramsey.com/wp-content/uploads/2019/04/CustomIcons_Facebook-2.png" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/kalin-ramsey-14468944/" target="_blank"><img src="http://www.kalinramsey.com/wp-content/uploads/2019/04/CustomIcons_LinkedIn-2.png" alt=""></a></li>
+                    <li><a href="https://github.com/KRamseyArt" target="_blank"><img src="http://www.kalinramsey.com/wp-content/uploads/2019/04/CustomIcons_GitHub.png" alt=""></a></li>
+                    <!-- <li><a href="http://facebook.com" target="_blank"><img src="http://via.placeholder.com/50/000000&text=T" alt=""></a></li> -->
+                </ul>
+            </div>
+            <!-- End of #Wrapper -->
+        </div>
+    </body>
+</html>
